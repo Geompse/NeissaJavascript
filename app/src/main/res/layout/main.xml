@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    android:gravity="top|center_horizontal">
+	<EditText
+		android:id="@+id/staticinput"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="#EEFFEE"
+		android:typeface="monospace"
+		android:gravity="top"/>
+	<TextView
+		android:id="@+id/output"
+		android:layout_width="match_parent"
+        android:layout_height="0dp"
+		android:layout_weight="2"
+		android:typeface="monospace"
+		android:gravity="bottom"
+		android:scrollbars="vertical" />
+	<TextView
+		android:id="@+id/erroroutput"
+		android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:textColor="#FF0000"
+		android:background="#EEEEEE"
+		android:typeface="monospace" />
+	<EditText
+		android:id="@+id/input"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="2"
+		android:background="#FFFFFF"
+		android:typeface="monospace"
+		android:gravity="top">
+		<requestFocus/>
+	</EditText>
+
+</LinearLayout>
